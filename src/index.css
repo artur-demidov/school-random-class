@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  @apply text-3xl font-bold tracking-tight text-gray-900;
+}
+.label {
+  @apply mb-1 block text-sm font-medium text-gray-700;
+}
+.input {
+  @apply block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:border-gray-200 disabled:bg-gray-100 disabled:shadow-none;
+}
+.btn {
+  @apply flex items-center justify-center rounded-md border   px-6 py-3 text-base font-medium  shadow-sm;
+}
+.btn--primary {
+  @apply border-transparent bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:bg-indigo-300;
+}
+.btn--secondary {
+  @apply border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+}
