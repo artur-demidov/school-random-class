@@ -1,5 +1,5 @@
 const endpoint =
-  'https://script.google.com/macros/s/AKfycbxQPg2eHzwTLVz67RpGoKciVC7kPncdsuJsS31AwIAnntpu8Jl93UhsOeL1t1OduWSRZA/exec';
+  'https://script.google.com/macros/s/AKfycbypl9Kwi_Mt9w_0nvPW_Omr8slyrsD4jDqy4Iy-BlR4rkCNwzT-5Mg3l7mQmu9ACz81zQ/exec';
 
 type formType = {
   fullName: string;
