@@ -1,10 +1,11 @@
 <script lang="ts">
   import { statusStore } from '../statusStore';
+  import { passwordStore } from '../passwordStore';
 
   let password = '';
 
   function save() {
-    localStorage.setItem('password', password);
+    passwordStore.set(password);
     statusStore.setIdle();
   }
 </script>
@@ -19,6 +20,7 @@
         name="password"
         id="password"
         class="input"
+        autocomplete="off"
         required
       />
     </div>

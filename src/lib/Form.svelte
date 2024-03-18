@@ -29,6 +29,7 @@
         name="fullName"
         id="fullName"
         class="input"
+        autocomplete="off"
         required
       />
     </div>
@@ -42,6 +43,7 @@
         name="birthDate"
         id="birthDate"
         class="input"
+        autocomplete="off"
         required
       />
     </div>
@@ -55,6 +57,7 @@
         name="address"
         id="address"
         class="input"
+        autocomplete="off"
         required
       />
     </div>

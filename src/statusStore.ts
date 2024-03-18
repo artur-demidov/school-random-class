@@ -8,7 +8,7 @@ type statusType =
   | { type: 'error'; payload: string };
 
 function createStatusStore() {
-  const { subscribe, set } = writable<statusType>({ type: 'idle' });
+  const { subscribe, set } = writable<statusType>({ type: 'password' });
 
   return {
     set,

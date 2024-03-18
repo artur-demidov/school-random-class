@@ -1,3 +1,7 @@
+import { get } from 'svelte/store';
+
+import { passwordStore } from './passwordStore';
+
 const endpoint =
   'https://script.google.com/macros/s/AKfycbypl9Kwi_Mt9w_0nvPW_Omr8slyrsD4jDqy4Iy-BlR4rkCNwzT-5Mg3l7mQmu9ACz81zQ/exec';
 
@@ -15,7 +19,7 @@ export async function addRow(form: formType) {
     },
     body: JSON.stringify({
       ...form,
-      password: localStorage.getItem('password'),
+      password: get(passwordStore),
     }),
   })
     .then((res) => res.json())

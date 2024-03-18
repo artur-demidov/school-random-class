@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { Settings } from 'lucide-svelte';
 
   import Form from './lib/Form.svelte';
@@ -7,13 +6,6 @@
   import Success from './lib/Success.svelte';
   import SetPassword from './lib/SetPassword.svelte';
   import { statusStore } from './statusStore';
-
-  onMount(() => {
-    const savedPassword = localStorage.password;
-    if (!savedPassword) {
-      statusStore.setPassword();
-    }
-  });
 </script>
 
 <main class="relative flex h-screen py-8 px-4">
