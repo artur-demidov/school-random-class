@@ -26,7 +26,7 @@
       <input
         bind:value={$formStore.fullName}
         type="text"
-        name="fullName"
+        name="off_fullName"
         id="fullName"
         class="input"
         autocomplete="off"
@@ -40,7 +40,7 @@
       <input
         bind:value={$formStore.birthDate}
         type="text"
-        name="birthDate"
+        name="off_birthDate"
         id="birthDate"
         class="input"
         autocomplete="off"
@@ -54,7 +54,7 @@
       <input
         bind:value={$formStore.address}
         type="text"
-        name="address"
+        name="off_address"
         id="address"
         class="input"
         autocomplete="off"
