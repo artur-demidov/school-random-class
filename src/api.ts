@@ -3,7 +3,7 @@ import { get } from 'svelte/store';
 import { passwordStore } from './passwordStore';
 
 const endpoint =
-  'https://script.google.com/macros/s/AKfycby81yzim2c5WvbXpbLKUP5uDFDB-BgXGmcWTGJb9A--AsSVkcj5Z2o86f_-EVpLxgvOig/exec';
+  'https://script.google.com/macros/s/AKfycbySfFq7JdLPkAi12DjthHHTR4I5XiOq2048-oNv2hoS7jfU_iNEhe6NFSCKoXGTgykdEQ/exec';
 
 type formType = {
   fullName: string;
