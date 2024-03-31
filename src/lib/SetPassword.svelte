@@ -13,11 +13,11 @@
 <form on:submit|preventDefault={save}>
   <fieldset class="space-y-8">
     <div>
-      <label for="password" class="label">Пароль</label>
+      <label for="x_password" class="label">Пароль</label>
       <input
         bind:value={password}
         type="password"
-        name="password"
+        name="x_password"
         id="password"
         class="input"
         autocomplete="off"
