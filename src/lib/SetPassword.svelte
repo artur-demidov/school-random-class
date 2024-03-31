@@ -16,7 +16,7 @@
       <label for="password" class="label">Пароль</label>
       <input
         bind:value={password}
-        type="text"
+        type="password"
         name="password"
         id="password"
         class="input"
