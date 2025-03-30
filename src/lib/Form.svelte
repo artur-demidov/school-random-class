@@ -9,7 +9,7 @@
     statusStore.setLoading();
     try {
       const res = await addRow({ ...$formStore });
-      statusStore.setSuccess(res.data.letter);
+      statusStore.setSuccess({ letter: res.data.letter as string, fullName: $formStore.fullName });
     } catch (e) {
       statusStore.setError(e.message);
     }

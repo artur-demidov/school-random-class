@@ -12,7 +12,7 @@ function createFormStore() {
   return {
     set,
     subscribe,
-    reset: () => set(initialState),
+    reset: () => set({ ...initialState }),
   };
 }
 

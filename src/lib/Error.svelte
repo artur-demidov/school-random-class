@@ -1,10 +1,8 @@
 <script lang="ts">
   import { statusStore } from '../statusStore';
-  import { formStore } from '../formStore';
 
   function retry() {
     statusStore.setIdle();
-    formStore.reset();
   }
 </script>
 
