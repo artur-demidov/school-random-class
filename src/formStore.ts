@@ -7,12 +7,12 @@ const initialState = {
 };
 
 function createFormStore() {
-  const { subscribe, set } = writable(initialState);
+  const { subscribe, set, update } = writable(initialState);
 
   return {
     set,
     subscribe,
-    reset: () => set({ ...initialState }),
+    reset: () => update((prevState) => ({ fullName: '', birthDate: '', address: prevState.address })),
   };
 }
 
